@@ -49,7 +49,7 @@ endif
 # gscan.cpp: address of array 'cached_results[i].results' will always evaluate to 'true'
 LOCAL_CLANG_CFLAGS := -Wno-pointer-bool-conversion
 
-LOCAL_CFLAGS += -Wall -Werror
+LOCAL_CFLAGS += -Wall -Werror -Wno-error=format
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH) \
